@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router , Route , Link, Redirect} from 'react-router-dom'
+import { BrowserRouter as Router , Route , Link} from 'react-router-dom'
 import Transactions from './components/Transactions';
 import Operations from './components/Operations';
 import axios from "axios";

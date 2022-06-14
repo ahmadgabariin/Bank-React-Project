@@ -11,7 +11,7 @@ export class Operations extends Component {
   }
   getInputsValues = () => {
     return {
-      amount   : parseInt(this.state.amount),
+      amount   : parseInt(this.state.amount , 10),
       category : this.state.category,
       vendor   : this.state.vendor
     }
@@ -51,6 +51,10 @@ export class Operations extends Component {
           : alert(`You need to add negative value`)
           this.emptyInputs()
         break
+
+        default : 
+          
+        break
       }
     }
     else { alert(`please fill the rows`)}
@@ -71,8 +75,8 @@ export class Operations extends Component {
           <input value={this.state.amount} name='amount' placeholder='Amount' onChange={this.getInputVlue}></input>
           <input value={this.state.category} name='category' placeholder='Category' onChange={this.getInputVlue}></input>
         <div className='opreations-buttons'>
-          <button onClick={this.addTransaction} className >Deposit</button>
-          <button onClick={this.addTransaction} >Withdraw</button>
+          <button onClick={this.addTransaction} className = {`deposit`} >Deposit</button>
+          <button onClick={this.addTransaction} className = {`withdraw`} >Withdraw</button>
         </div>
       </div>
       </div>

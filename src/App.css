@@ -39,7 +39,7 @@ a{
     display: grid;
     width: 20%;
     margin-top: 4vh;
-    row-gap: 2vh;
+    row-gap: 4vh;
     
 }
 
@@ -47,14 +47,13 @@ a{
     display: grid;
     justify-content: center;
     align-content: center;
-    height: 50vh;
+    
 }
 .opreations-buttons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-
 }
 
 .breakdown {
@@ -81,10 +80,10 @@ a{
     justify-items: center ;
 }
 
-.green {
+.green , .deposit {
     background-color: rgb(74, 218, 74, 0.6);
 }
-.red {
+.red , .withdraw {
     background-color: rgb(218, 38, 38,0.6);
 }
 
@@ -105,4 +104,18 @@ a{
 }
 .button-delete:hover {
    background-color: aqua;
+}
+.withdraw , .deposit {
+   border: none;
+   border-radius: 5%;
+   padding: 1vh;
+   cursor: pointer;
+}
+
+.withdraw:hover , .deposit:hover {
+   border: solid 1px black;
+}
+
+a {
+    text-decoration: none;
 }
